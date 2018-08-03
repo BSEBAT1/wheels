@@ -47,7 +47,7 @@ class DetailViewController: UIViewController {
             case 0:
                 if let name = detailPlanet?.name {
 
-                    textlabel = "Planet name "+name
+                    textlabel = "Planet Name "+name
 
                     views.text = textlabel
                 }
@@ -96,6 +96,7 @@ class DetailViewController: UIViewController {
         setUpConstraints()
     }
 
+    //Mark Setup Constraints 
     func setUpConstraints() {
 
         let views: [String: AnyObject] = ["name": name, "population": population, "climate": climate,"created": created]

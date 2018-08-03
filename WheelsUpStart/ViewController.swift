@@ -38,7 +38,8 @@ class ViewController: UIViewController {
 
         setupViews()
     }
-    
+
+    //Mark Setup Views
     func setupViews() {
         
         let subviews: [String: AnyObject] = ["tableView": table]
@@ -57,6 +58,7 @@ class ViewController: UIViewController {
     
 }
 
+//Mark TableView Delegate
 extension ViewController: UITableViewDelegate {
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -73,6 +75,7 @@ extension ViewController: UITableViewDelegate {
         }
 }
 
+//Mark DataSource Protocol
 extension ViewController: DataSourceUpdates {
     
     func updateData() {

@@ -51,7 +51,7 @@ class StarWarsTableViewCell: UITableViewCell {
 
         layoutConstraits()
 }
-    
+    //Mark Setup Constraints
     func layoutConstraits() {
 
         let views: [String: AnyObject] = ["title": title, "detail": detailIcon, "planet": planetIcon]
@@ -98,6 +98,11 @@ class StarWarsTableViewCell: UITableViewCell {
 
             self.addConstraints(horizontalPlanet)
 
+    }
+
+    override func prepareForReuse() {
+
+        title.text = ""
     }
 
 }
