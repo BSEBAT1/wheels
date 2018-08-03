@@ -20,6 +20,8 @@ class ViewController: UIViewController {
 
         super.viewDidLoad()
 
+        self.title = "Star Wars List"
+        
         table.translatesAutoresizingMaskIntoConstraints = false
 
         view.addSubview(table)
