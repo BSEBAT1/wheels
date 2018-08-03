@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1903035D211469E500418B65 /* StarWarsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1903035C211469E500418B65 /* StarWarsTableViewCell.swift */; };
+		190303612114A67A00418B65 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190303602114A67A00418B65 /* DetailViewController.swift */; };
 		195D38DB211260CB00B179C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D38DA211260CB00B179C7 /* AppDelegate.swift */; };
 		195D38DD211260CB00B179C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D38DC211260CB00B179C7 /* ViewController.swift */; };
 		195D38E0211260CB00B179C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195D38DE211260CB00B179C7 /* Main.storyboard */; };
@@ -14,6 +16,13 @@
 		195D38E5211260CC00B179C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195D38E3211260CC00B179C7 /* LaunchScreen.storyboard */; };
 		195D38F0211260CC00B179C7 /* WheelsUpStartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D38EF211260CC00B179C7 /* WheelsUpStartTests.swift */; };
 		195D38FB211260CC00B179C7 /* WheelsUpStartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D38FA211260CC00B179C7 /* WheelsUpStartUITests.swift */; };
+		195D390A2112780C00B179C7 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D39092112780C00B179C7 /* TableViewDataSource.swift */; };
+		195D390C21127CCE00B179C7 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D390B21127CCE00B179C7 /* Planets.swift */; };
+		195D390E211295A700B179C7 /* NetworkJedi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D390D211295A700B179C7 /* NetworkJedi.swift */; };
+		195D39102112AC9E00B179C7 /* DataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D390F2112AC9E00B179C7 /* DataSourceDelegate.swift */; };
+		243718D00350B4DAF3BFB8D3 /* Pods_WheelsUpStartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86586BE438358C901E1025BC /* Pods_WheelsUpStartUITests.framework */; };
+		64FAE6FDCD8A1C16497416D2 /* Pods_WheelsUpStart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB0F7FBF830EBBCEA4ABA38 /* Pods_WheelsUpStart.framework */; };
+		DCC12E0AA157B477AAC98B84 /* Pods_WheelsUpStartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C51C76A9814C163D3C2DA1 /* Pods_WheelsUpStartTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1903035C211469E500418B65 /* StarWarsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsTableViewCell.swift; sourceTree = "<group>"; };
+		190303602114A67A00418B65 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		195D38D7211260CB00B179C7 /* WheelsUpStart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheelsUpStart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195D38DA211260CB00B179C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		195D38DC211260CB00B179C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,19 @@
 		195D38F6211260CC00B179C7 /* WheelsUpStartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheelsUpStartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		195D38FA211260CC00B179C7 /* WheelsUpStartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelsUpStartUITests.swift; sourceTree = "<group>"; };
 		195D38FC211260CC00B179C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		195D39092112780C00B179C7 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		195D390B21127CCE00B179C7 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
+		195D390D211295A700B179C7 /* NetworkJedi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkJedi.swift; sourceTree = "<group>"; };
+		195D390F2112AC9E00B179C7 /* DataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceDelegate.swift; sourceTree = "<group>"; };
+		415C88F325877B9A9326F510 /* Pods-WheelsUpStartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheelsUpStartTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WheelsUpStartTests/Pods-WheelsUpStartTests.release.xcconfig"; sourceTree = "<group>"; };
+		42A3D6549E893E3D07855503 /* Pods-WheelsUpStartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheelsUpStartTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WheelsUpStartTests/Pods-WheelsUpStartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E26F8333242C0EFF940F7B9 /* Pods-WheelsUpStart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheelsUpStart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WheelsUpStart/Pods-WheelsUpStart.debug.xcconfig"; sourceTree = "<group>"; };
+		5EB0F7FBF830EBBCEA4ABA38 /* Pods_WheelsUpStart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheelsUpStart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76C51C76A9814C163D3C2DA1 /* Pods_WheelsUpStartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheelsUpStartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86586BE438358C901E1025BC /* Pods_WheelsUpStartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheelsUpStartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F552937A90C34F98AF0566 /* Pods-WheelsUpStartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheelsUpStartUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WheelsUpStartUITests/Pods-WheelsUpStartUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB2E9804C113277178F54B5A /* Pods-WheelsUpStart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheelsUpStart.release.xcconfig"; path = "Pods/Target Support Files/Pods-WheelsUpStart/Pods-WheelsUpStart.release.xcconfig"; sourceTree = "<group>"; };
+		D347F327963FAA6E1163E7E3 /* Pods-WheelsUpStartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheelsUpStartUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WheelsUpStartUITests/Pods-WheelsUpStartUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64FAE6FDCD8A1C16497416D2 /* Pods_WheelsUpStart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC12E0AA157B477AAC98B84 /* Pods_WheelsUpStartTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243718D00350B4DAF3BFB8D3 /* Pods_WheelsUpStartUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +108,8 @@
 				195D38EE211260CC00B179C7 /* WheelsUpStartTests */,
 				195D38F9211260CC00B179C7 /* WheelsUpStartUITests */,
 				195D38D8211260CB00B179C7 /* Products */,
+				E0131EEAB79A1C61C1F1CDE6 /* Pods */,
+				A2DF75DE04E0A4C919C521A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +128,16 @@
 			children = (
 				195D38DA211260CB00B179C7 /* AppDelegate.swift */,
 				195D38DC211260CB00B179C7 /* ViewController.swift */,
+				195D390D211295A700B179C7 /* NetworkJedi.swift */,
+				190303602114A67A00418B65 /* DetailViewController.swift */,
+				1903035C211469E500418B65 /* StarWarsTableViewCell.swift */,
 				195D38DE211260CB00B179C7 /* Main.storyboard */,
 				195D38E1211260CC00B179C7 /* Assets.xcassets */,
 				195D38E3211260CC00B179C7 /* LaunchScreen.storyboard */,
 				195D38E6211260CC00B179C7 /* Info.plist */,
+				195D39092112780C00B179C7 /* TableViewDataSource.swift */,
+				195D390F2112AC9E00B179C7 /* DataSourceDelegate.swift */,
+				195D390B21127CCE00B179C7 /* Planets.swift */,
 			);
 			path = WheelsUpStart;
 			sourceTree = "<group>";
@@ -125,6 +160,29 @@
 			path = WheelsUpStartUITests;
 			sourceTree = "<group>";
 		};
+		A2DF75DE04E0A4C919C521A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EB0F7FBF830EBBCEA4ABA38 /* Pods_WheelsUpStart.framework */,
+				76C51C76A9814C163D3C2DA1 /* Pods_WheelsUpStartTests.framework */,
+				86586BE438358C901E1025BC /* Pods_WheelsUpStartUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0131EEAB79A1C61C1F1CDE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E26F8333242C0EFF940F7B9 /* Pods-WheelsUpStart.debug.xcconfig */,
+				CB2E9804C113277178F54B5A /* Pods-WheelsUpStart.release.xcconfig */,
+				42A3D6549E893E3D07855503 /* Pods-WheelsUpStartTests.debug.xcconfig */,
+				415C88F325877B9A9326F510 /* Pods-WheelsUpStartTests.release.xcconfig */,
+				D347F327963FAA6E1163E7E3 /* Pods-WheelsUpStartUITests.debug.xcconfig */,
+				C7F552937A90C34F98AF0566 /* Pods-WheelsUpStartUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 195D38FF211260CC00B179C7 /* Build configuration list for PBXNativeTarget "WheelsUpStart" */;
 			buildPhases = (
+				1621D760B0BF168E07A63C48 /* [CP] Check Pods Manifest.lock */,
 				195D38D3211260CB00B179C7 /* Sources */,
 				195D38D4211260CB00B179C7 /* Frameworks */,
 				195D38D5211260CB00B179C7 /* Resources */,
+				195D3908211262B200B179C7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -149,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 195D3902211260CC00B179C7 /* Build configuration list for PBXNativeTarget "WheelsUpStartTests" */;
 			buildPhases = (
+				B6A4934D332287F2B73F6117 /* [CP] Check Pods Manifest.lock */,
 				195D38E7211260CC00B179C7 /* Sources */,
 				195D38E8211260CC00B179C7 /* Frameworks */,
 				195D38E9211260CC00B179C7 /* Resources */,
@@ -167,6 +228,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 195D3905211260CC00B179C7 /* Build configuration list for PBXNativeTarget "WheelsUpStartUITests" */;
 			buildPhases = (
+				AEDAB0FAC867D344FA081D11 /* [CP] Check Pods Manifest.lock */,
 				195D38F2211260CC00B179C7 /* Sources */,
 				195D38F3211260CC00B179C7 /* Frameworks */,
 				195D38F4211260CC00B179C7 /* Resources */,
@@ -251,13 +313,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1621D760B0BF168E07A63C48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WheelsUpStart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		195D3908211262B200B179C7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		AEDAB0FAC867D344FA081D11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WheelsUpStartUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6A4934D332287F2B73F6117 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WheelsUpStartTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		195D38D3211260CB00B179C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195D390A2112780C00B179C7 /* TableViewDataSource.swift in Sources */,
+				195D39102112AC9E00B179C7 /* DataSourceDelegate.swift in Sources */,
 				195D38DD211260CB00B179C7 /* ViewController.swift in Sources */,
+				1903035D211469E500418B65 /* StarWarsTableViewCell.swift in Sources */,
 				195D38DB211260CB00B179C7 /* AppDelegate.swift in Sources */,
+				195D390E211295A700B179C7 /* NetworkJedi.swift in Sources */,
+				195D390C21127CCE00B179C7 /* Planets.swift in Sources */,
+				190303612114A67A00418B65 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +566,7 @@
 		};
 		195D3900211260CC00B179C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E26F8333242C0EFF940F7B9 /* Pods-WheelsUpStart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +585,7 @@
 		};
 		195D3901211260CC00B179C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB2E9804C113277178F54B5A /* Pods-WheelsUpStart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +604,7 @@
 		};
 		195D3903211260CC00B179C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A3D6549E893E3D07855503 /* Pods-WheelsUpStartTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +626,7 @@
 		};
 		195D3904211260CC00B179C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 415C88F325877B9A9326F510 /* Pods-WheelsUpStartTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +648,7 @@
 		};
 		195D3906211260CC00B179C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D347F327963FAA6E1163E7E3 /* Pods-WheelsUpStartUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +669,7 @@
 		};
 		195D3907211260CC00B179C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7F552937A90C34F98AF0566 /* Pods-WheelsUpStartUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
