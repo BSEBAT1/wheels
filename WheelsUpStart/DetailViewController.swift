@@ -10,50 +10,104 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    override func viewDidLoad() {
+    var detailPlanet:Planet?
 
-        super.viewDidLoad()
+    let name = UILabel()
 
-        var image:UIImageView = UIImageView()
-        var artistName:UILabel = UILabel()
-        var genreLabel:UILabel = UILabel()
-        var titleLabel:UILabel = UILabel()
-        var label: UILabel = UILabel()
+    let climate = UILabel()
 
-        image.translatesAutoresizingMaskIntoConstraints=false
-        artistName.translatesAutoresizingMaskIntoConstraints=false
-        genreLabel.translatesAutoresizingMaskIntoConstraints=false
-        titleLabel.translatesAutoresizingMaskIntoConstraints=false
-        view.addSubview(image)
-        view.addSubview(artistName)
-        view.addSubview(genreLabel)
-        view.addSubview(titleLabel)
-        artistName.text="Artist:Dua Lipa"
-        genreLabel.text="Genre:Pop/House"
-        titleLabel.text="CurrentAlbum:Dua Lipa"
-        image.image=UIImage.init(named:"planet")
-        image.layer.cornerRadius=8;
-        image.clipsToBounds=true;
-        label = UILabel()
-        view.addSubview(label)
-        label.translatesAutoresizingMaskIntoConstraints=false
-        label.text="demo"
+    let population = UILabel()
 
-        let dictonaryofviews:[String:AnyObject] = ["Image":image,"Artist":artistName,"Genre":genreLabel,"Title":titleLabel,"label":label]
+    let created = UILabel()
 
-        let imagevert=NSLayoutConstraint.constraints(withVisualFormat:"H:|-2-[Image(95@1000)]-10-[Artist(55@500)]" , options:[.alignAllTop], metrics:nil, views:dictonaryofviews)
-        let imagehor = NSLayoutConstraint.constraints(withVisualFormat:"V:|-2-[Image(95@1000)]|" , options:NSLayoutFormatOptions(rawValue: 0), metrics:nil, views:dictonaryofviews)
-         // swiftlint:disable:next line_length
-        let genretvert=NSLayoutConstraint.constraints(withVisualFormat:"V:[Artist]-5-[Genre(25@650)]-5-[Title(25@650)]-[label(20@650)]" , options:[.alignAllLeading], metrics:nil, views:dictonaryofviews)
+    init(withPlanet: Planet) {
 
-        view.addConstraints(genretvert)
-        view.addConstraints(imagevert)
-        view.addConstraints(imagehor)
+        detailPlanet = withPlanet
 
+        super.init(nibName: nil, bundle: nil)
 
     }
 
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 
+    override func viewDidLoad() {
 
+        view.backgroundColor = UIColor.white
+
+        let labels: [UILabel] = [name,climate,population,created]
+
+        var textlabel = "Unknown"
+
+        for (count, views) in labels.enumerated() {
+
+            switch (count)
+            {
+            case 0:
+                if let name = detailPlanet?.name {
+
+                    textlabel = "Planet name "+name
+
+                    views.text = textlabel
+                }
+
+                views.text = textlabel
+            case 1:
+
+                if let climate = detailPlanet?.climate {
+
+                    textlabel = "Planet Climate "+climate
+
+                    views.text = textlabel
+                }
+
+                views.text = textlabel
+
+            case 2:
+                if let population = detailPlanet?.population {
+
+                    textlabel = "Planet Population "+population
+
+                    views.text = population
+                }
+
+                views.text = textlabel
+
+            case 3:
+                if let created = detailPlanet?.created {
+
+                    textlabel = "Planet Created "+created
+
+                    views.text = textlabel
+                }
+
+                views.text = textlabel
+
+            default:
+                views.text = textlabel
+            }
+
+            views.translatesAutoresizingMaskIntoConstraints = false
+
+            self.view.addSubview(views)
+        }
+
+        setUpConstraints()
+    }
+
+    func setUpConstraints() {
+
+        let views: [String: AnyObject] = ["name": name, "population": population, "climate": climate,"created": created]
+
+        let verticalTitle = NSLayoutConstraint.constraints(
+            withVisualFormat: "V:|-150-[name]-[population]-[climate]-[created]",
+            options: .alignAllLeading,
+            metrics: nil,
+            views: views)
+
+        self.view.addConstraints(verticalTitle)
+
+    }
 
 }

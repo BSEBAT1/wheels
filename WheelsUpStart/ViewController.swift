@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         
         let subviews: [String: AnyObject] = ["tableView": table]
         
-        let tableViewHorizontal = NSLayoutConstraint.constraints(withVisualFormat: "H:|-[tableView]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: subviews)
+        let tableViewHorizontal = NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[tableView]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: subviews)
         
         let tableViewVertical = NSLayoutConstraint.constraints(withVisualFormat: "V:|-[tableView]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: subviews)
         
@@ -61,9 +61,15 @@ extension ViewController: UITableViewDelegate {
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-            let detail = DetailViewController()
+            let selected = datasource?.starWarsPlanets[indexPath.row]
+
+        if let selectedplanet = selected {
+
+            let detail = DetailViewController.init(withPlanet: selectedplanet)
 
             self.navigationController?.pushViewController(detail, animated: false)
+        }
+
         }
 }
 
